@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #6a0572;
+    color: #f9dc5c;
+}
+
+.main{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.main .todo{
+    width: 24%;
+    margin-top: 1%;
+}
+
+.main .todo input{
+    width: 23%;
+    outline: none;
+    border: none;
+    padding: 2% 5%;
+    /* border: 1px solid black; */
+    border-radius: 4px;
+}
+.main .todo #btn:hover{
+    background-color: #f5f5f5;
+}
+.main .todo #btn{
+    background-color: #ffd700;
+}
+.main .todo>:first-child{
+    width: 65%;
+}
+
+.main .todo ul{
+    width: 100%;
+    max-width: 100%;
+    list-style: none;
+}
+.main .todo ul li{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+    border-radius: 4px;
+}
+.main .todo ul li p{
+    flex-grow: 1;
+    padding: 3px 20px;
+    color: black;
+}
+.main .todo ul li pre{
+    margin: 0 3px;
+    color: #6a0572;
+}
+.main .todo ul li pre:hover{
+    color: black;
+    font-weight: bold;
+    font-size:15px;
+}
+
+
+@media (min-width:320px) and (max-width:825px){
+    .main .todo{
+        width: 80%;
+        margin: 5% auto;
+    }
+    .main .todo ul li{
+        height: 40px;
+    }
+}
